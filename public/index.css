@@ -40,6 +40,7 @@ body, html {
     font-size: 22px;
 } */
 
+
 main {
     background: url("assets/Fotolia_69424905_Subscription_Monthly_M.jpg");
     /* Full height */
@@ -60,7 +61,6 @@ main {
 .advertising {
     font-family: 'vanilla_whaleregular';
     text-align: center;
-    font-size: 2.5rem;
     color: #FFFFFF;
 
     display: flex;
@@ -69,13 +69,49 @@ main {
 }
 
 
+
 .main-content {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     margin : auto auto;
 }
+/* 
+.main-button {
+    
+    width: 15em;
+    height: 5em;
+
+    background-color: black;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.5rem;
+}
+
+.main-button h1 {
+    font-size: 3rem;
+    color: #FFFFFF;
+    font-family: 'vanilla_whaleregular';
+
+    
+} */
+
+/* .main-button img {
+    border-left: 0.2rem solid #FFFFFF;
+    padding-left: 1rem;
+    width: 1.5rem;
+
+    -webkit-filter: invert(1);
+    filter: invert(1);
+} */
 
 .logo-main {
-    
     position: relative;
     width: 50rem;
 }
