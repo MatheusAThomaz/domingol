@@ -15,9 +15,16 @@
 
     <body>
         <main>
+            <img class="logo" src="assets/LOGO Domingol minimalista Branco (negativo).png" alt="">
             <form id="regForm" action="">
 
-                
+                <!-- Circles which indicates the steps of the form: -->
+                <div style="text-align:center; margin-bottom: 3rem;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
                 <!-- One "tab" for each step in the form: -->
                 <div class="tab">
                   <h1>Quantos convidados?</h1>
@@ -41,19 +48,19 @@
                 </div>
                 
                 <div style="overflow:auto;">
-                  <div style="float:right;">
-                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                  <div>
+                    <button class="form-button" type="button" id="prevBtn" onclick="nextPrev(-1)">
+                        Previous
+                        <img src="assets/favpng_arrow-button-icon.png" alt="">
+                    </button>
+                    <button class="form-button" type="button" id="nextBtn" onclick="nextPrev(1)">
+                        <h1 id="button-text">Próximo</h1>
+                        <img src="assets/favpng_arrow-button-icon.png" alt="">
+                    </button>
                   </div>
                 </div>
                 
-                <!-- Circles which indicates the steps of the form: -->
-                <div style="text-align:center;margin-top:40px;">
-                  <span class="step"></span>
-                  <span class="step"></span>
-                  <span class="step"></span>
-                  <span class="step"></span>
-                </div>
+
                 
                 </form>
         </main>

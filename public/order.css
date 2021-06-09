@@ -14,6 +14,7 @@ body, html {
 
 
 body {
+    font-family: 'vanilla_whaleregular';
     background: url("assets/background.jpg");
     /* Full height */
     height: 100%;
@@ -42,11 +43,14 @@ main {
     max-height: 100%;
 }
 
+.logo {
+    max-width: 50rem;
+}
+
 
 /* Style the form */
 #regForm {
-    margin: 10rem 10rem;
-    padding: 2.5rem;
+    margin: 7rem 10rem;
     min-width: 30rem;
 }
 
@@ -76,8 +80,8 @@ input.invalid {
     font-family: 'vanilla_whaleregular';
     text-align: center;
     color: #FFFFFF;
-    font-size: 10rem;
-    padding-bottom: 10rem;
+    font-size: 9rem;
+    padding-bottom: 8rem;
 
     display: block;
     margin : 0 auto;
@@ -86,12 +90,58 @@ input.invalid {
 .form__input{
     font-family: 'vanilla_whaleregular';
     font-size: 3rem;
-    padding: 1rem;
     border-radius: 1rem;
 
-    
+    box-sizing: border-box;
+    border: 1px solid;
+
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    max-width: 100%;
     display: block;
     margin : 0 auto;
+}
+
+.form-button:hover {
+    border-color: red;;
+    font-size: 3.5rem;
+}
+
+.form-button {
+    font-family: 'vanilla_whaleregular';
+    font-size: 3rem;
+
+    background-color: #000000;
+    color: #FFFFFF;
+
+    padding: 0.3rem;
+    width: 18rem;
+    border: 1px solid;
+    border-radius: 1rem;
+
+    display: block;
+
+    margin: 3rem auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-button h1 {
+    padding-right: 2.5rem;
+    border-right: 0.2rem solid #FFFFFF;
+}
+.form-button img {
+    display: inline-block;
+    padding-left: 1.5rem;
+    width: 1.5rem;
+
+    -webkit-filter: invert(1);
+    filter: invert(1);
 }
 
 /* Make circles that indicate the steps of the form: */
@@ -113,5 +163,5 @@ input.invalid {
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-    background-color: #04AA6D;
+    background-color: red;
 }
