@@ -15,7 +15,7 @@ body, html {
 
 body {
     font-family: 'vanilla_whaleregular';
-    background: url("assets/background.jpg");
+    background: url("assets/Fotolia_69424905_Subscription_Monthly_M.jpg");
     /* Full height */
     height: 100%;
     width: 100%;
@@ -50,7 +50,8 @@ main {
 
 /* Style the form */
 #regForm {
-    margin: 7rem 10rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
     min-width: 30rem;
 }
 
@@ -80,8 +81,8 @@ input.invalid {
     font-family: 'vanilla_whaleregular';
     text-align: center;
     color: #FFFFFF;
-    font-size: 9rem;
-    padding-bottom: 8rem;
+    font-size: 8rem;
+    padding-bottom: 7rem;
 
     display: block;
     margin : 0 auto;
@@ -95,35 +96,35 @@ input.invalid {
     box-sizing: border-box;
     border: 1px solid;
 
-    padding-left: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-left: 0.7rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
 
     max-width: 100%;
     display: block;
     margin : 0 auto;
 }
 
-.form-button:hover {
+/* .form-button:hover {
     border-color: red;;
     font-size: 3.5rem;
-}
+} */
 
-.form-button {
+.form-right {
     font-family: 'vanilla_whaleregular';
-    font-size: 3rem;
+    font-size: 2rem;
 
     background-color: #000000;
     color: #FFFFFF;
 
     padding: 0.3rem;
-    width: 18rem;
+    width: 10rem;
     border: 1px solid;
     border-radius: 1rem;
 
     display: block;
 
-    margin: 3rem auto;
+    margin: 3rem 0;
 
     display: flex;
     flex-direction: row;
@@ -131,15 +132,55 @@ input.invalid {
     justify-content: center;
 }
 
-.form-button h1 {
-    padding-right: 2.5rem;
-    border-right: 0.2rem solid #FFFFFF;
+
+.form-left {
+    font-family: 'vanilla_whaleregular';
+    font-size: 2rem;
+
+    background-color: #000000;
+    color: #FFFFFF;
+
+    padding: 0.3rem;
+    width: 10rem;
+    border: 1px solid;
+    border-radius: 1rem;
+
+    display: block;
+
+    margin: 3rem 0;
+    margin-right: 7rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-.form-button img {
+
+
+
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: center;
+}
+
+.form-right img {
     display: inline-block;
     padding-left: 1.5rem;
     width: 1.5rem;
 
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.form-left img {
+    display: inline-block;
+    padding-left: 1.5rem;
+    width: 1.5rem;
+
+    transform: rotate(180deg);
     -webkit-filter: invert(1);
     filter: invert(1);
 }
