@@ -110,6 +110,8 @@ main {
     margin-bottom: 1.5rem;
 
     border-radius: 0.5rem;
+
+    cursor:pointer;
 }
 
 .main-button h1{

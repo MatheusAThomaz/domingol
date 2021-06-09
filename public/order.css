@@ -1,0 +1,117 @@
+body, html {
+    height: 100%;
+    width: 100%;
+  }
+
+@font-face {
+    font-family: 'vanilla_whaleregular';
+    src: url('assets/fonts/vanilla/vanilla_whale-webfont.woff2') format('woff2'),
+         url('assets/fonts/vanilla/vanilla_whale-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+    background: url("assets/background.jpg");
+    /* Full height */
+    height: 100%;
+    width: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* Style the form */
+#regForm {
+    margin: 10rem 10rem;
+    padding: 2.5rem;
+    min-width: 30rem;
+}
+
+
+
+/* Style the input fields */
+input {
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+  
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+
+    margin : 0 auto;
+}
+
+.tab h1 {
+    font-family: 'vanilla_whaleregular';
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 10rem;
+    padding-bottom: 10rem;
+
+    display: block;
+    margin : 0 auto;
+}
+
+.form__input{
+    font-family: 'vanilla_whaleregular';
+    font-size: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    
+    display: block;
+    margin : 0 auto;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
