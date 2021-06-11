@@ -1,4 +1,38 @@
 var currentTab = 0; 
+
+
+$(document).ready(function() {
+  $("#minus").click(function(event) {
+    zoom("out");
+  });
+
+  $("#plus").click(function(event) {
+    zoom("in");
+  });
+
+  $("#myRange").on('input change', function(event) {
+    $('#outputText').text($(event.currentTarget).val());
+  });
+
+  function zoom(direction) {
+    var slider = $("#myRange");
+    var step = parseInt(slider.attr('step'), 10);
+    var currentSliderValue = parseInt(slider.val(), 10);
+    var newStepValue = currentSliderValue + step;
+  
+    if (direction === "out") {
+      newStepValue = currentSliderValue - step;
+    } else {
+      newStepValue = currentSliderValue + step;
+    }
+  
+    slider.val(newStepValue).change();
+  };
+})
+
+
+
+
 document.addEventListener("DOMContentLoaded", function(){
     // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
@@ -75,3 +109,4 @@ function fixStepIndicator(n) {
   //... and adds the "active" class to the current step:
   x[n].className += " active";
 }
+

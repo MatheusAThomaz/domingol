@@ -16,7 +16,7 @@
     <body>
         <main>
             <img class="logo" src="assets/LOGO Domingol minimalista Branco (negativo).png" alt="">
-            <form id="regForm" action="">
+            <div id="regForm" action="">
 
                 <!-- Circles which indicates the steps of the form: -->
                 <div style="text-align:center; margin-bottom: 3rem;">
@@ -27,8 +27,43 @@
                 </div>
                 <!-- One "tab" for each step in the form: -->
                 <div class="tab">
-                  <h1>Quantos convidados?</h1>
-                  <input class="form__input" type="number" placeholder="Numero de Convidados..."  min="1" max="100">
+                  
+                  <h1>Convidados</h1>
+                  <div class="input-box">
+
+                    <h2>Homens</h2>
+                    <div class="input-container">
+                      <button id="minus">-</button>
+                      <input  class="slider" id="myRange" type="range" max="100" step="1" value="50">    
+                      <button id="plus">+</button>
+                      <output for="myRange" id="outputText">50</output>                  
+                    </div>
+
+                    <h2>Mulheres</h2>
+                    <div class="input-container">
+                      <button id="minus">-</button>
+                      <input  class="slider" id="myRange" type="range" max="100" step="1" value="50">   
+                      <button id="plus">+</button>
+                      <output for="myRange" id="outputText">50</output>                  
+                    </div>
+
+                    <h2>Crianças</h2>
+                    <div class="input-container">
+                      <button id="minus">-</button>
+                      <input  class="slider" id="myRange" type="range" max="100" step="1" value="50">   
+                      <button id="plus">+</button>
+                      <output for="myRange" id="outputText">50</output>                  
+                    </div>
+
+                    <h2>Veggie</h2>
+                    <div class="input-container">
+                      <button id="minus">-</button>
+                      <input  class="slider" id="myRange" type="range" max="100" step="1" value="50">   
+                      <button id="plus">+</button>
+                      <output for="myRange" id="outputText">50</output>                  
+                    </div>
+                  </div>
+                  
                 </div>
                 
                 <!-- One "tab" for each step in the form: -->
@@ -51,7 +86,7 @@
                 
                 <div>
                   <div class="button-box">
-                    <button class="form-left" type="button" id="prevBtn" onclick="nextPrev(-)">
+                    <button class="form-left" type="button" id="prevBtn" onclick="nextPrev(-1)">
                       <img src="assets/favpng_arrow-button-icon.png" alt="">
                       <h1 id="button-prev">Anterior</h1>
                   </button>
@@ -65,7 +100,7 @@
                 
 
                 
-                </form>
+              </div>
         </main>
     </body>
 </html>

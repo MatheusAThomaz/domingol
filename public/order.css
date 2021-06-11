@@ -17,8 +17,6 @@ body {
     font-family: 'vanilla_whaleregular';
     background: url("assets/Fotolia_69424905_Subscription_Monthly_M.jpg");
     /* Full height */
-    height: 100%;
-    width: 100%;
 
     max-width: 100%;
     max-height: 100%;
@@ -27,10 +25,6 @@ body {
     background-position: center;
     background-size: cover;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 main {
@@ -44,7 +38,8 @@ main {
 }
 
 .logo {
-    max-width: 50rem;
+    margin-top: 10rem;
+    max-width: 35rem;
 }
 
 
@@ -55,14 +50,50 @@ main {
     min-width: 30rem;
 }
 
+.input-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-container button {
+    flex: 0 0 auto;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    background: red;
+    font-size: 2.5rem;
+    color: white;
+
+    font-weight: bold;
+    font-family: 'vanilla_whaleregular';
+
+    border: 1px none lightgrey;
+    cursor: pointer;
+    -webkit-appearance: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+  }
+
+.input-container output{
+    margin-left: 1.5rem;
+    color: #FFFFFF;
+}
 
 
 /* Style the input fields */
 input {
     width: 100%;
-    font-size: 17px;
+    font-size: 5rem;
     font-family: Raleway;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
 }
   
 /* Mark input boxes that gets an error on validation: */
@@ -88,13 +119,64 @@ input.invalid {
     margin : 0 auto;
 }
 
+.input-box {
+    background-color: #000000;
+    width: 40rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.input-box h2 {
+    font-family: 'vanilla_whaleregular';
+    font-size: 3rem;
+
+    color: #FFF;
+}
+
+.slider {
+    margin: 1rem 0;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    border: 1px solid black;
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 0.4rem;
+    border-radius: 1.5rem; 
+    background-color: red;
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%; 
+    background: red;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  
+ 
+
 .form__input{
     font-family: 'vanilla_whaleregular';
     font-size: 3rem;
     border-radius: 1rem;
 
     box-sizing: border-box;
-    border: 1px solid;
+    border: 100px solid;
 
     padding-left: 0.7rem;
     padding-top: 0.7rem;
@@ -112,13 +194,13 @@ input.invalid {
 
 .form-right {
     font-family: 'vanilla_whaleregular';
-    font-size: 2rem;
+    font-size: 3rem;
 
     background-color: #000000;
     color: #FFFFFF;
 
     padding: 0.3rem;
-    width: 10rem;
+    width: 13rem;
     border: 1px solid;
     border-radius: 1rem;
 
@@ -135,13 +217,13 @@ input.invalid {
 
 .form-left {
     font-family: 'vanilla_whaleregular';
-    font-size: 2rem;
+    font-size: 3rem;
 
     background-color: #000000;
     color: #FFFFFF;
 
     padding: 0.3rem;
-    width: 10rem;
+    width: 13rem;
     border: 1px solid;
     border-radius: 1rem;
 
