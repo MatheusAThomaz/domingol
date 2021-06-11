@@ -2,20 +2,20 @@ var currentTab = 0;
 
 
 $(document).ready(function() {
-  $("#minus").click(function(event) {
-    zoom("out");
+  $(".minus-button").click(function(event) {
+    zoom("out", this);
   });
 
-  $("#plus").click(function(event) {
-    zoom("in");
+  $(".plus-button").click(function(event) {
+    zoom("in", this);
   });
 
-  $("#myRange").on('input change', function(event) {
-    $('#outputText').text($(event.currentTarget).val());
+  $(".slider").on('input change', function(event) {
+    $(this).siblings('#outputText').text($(event.currentTarget).val());
   });
 
-  function zoom(direction) {
-    var slider = $("#myRange");
+  function zoom(direction, eve) {
+    var slider = $(eve).siblings('.slider');
     var step = parseInt(slider.attr('step'), 10);
     var currentSliderValue = parseInt(slider.val(), 10);
     var newStepValue = currentSliderValue + step;
